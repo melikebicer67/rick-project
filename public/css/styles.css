@@ -1,0 +1,74 @@
+:root {
+  --dark-grey: #272b33;
+  --light-grey: #3c3e44;
+}
+.main-div {
+  background-color: var(--dark-grey);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4.5rem 0px;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main-div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1320px !important;
+}
+.main-cards {
+  width: 600px;
+  height: 220px;
+  display: flex !important;
+  overflow: hidden !important;
+  flex-direction: row !important;
+  background-color: var(--light-grey) !important;
+  border-radius: 0.75rem !important;
+  margin: 0.75rem;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,
+    rgb(0 0 0 / 6%) 0px 2px 4px -1px !important;
+  padding: 0 !important;
+  gap: 50px;
+}
+.text-div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  margin: auto;
+  gap: 4px;
+}
+.main-cards img {
+  height: 100%;
+  width: 250px;
+}
+.filter-select input {
+  background-color: var(--light-grey) !important;
+  color: #f9f9f9;
+}
+.mantine-Select-dropdown {
+  background-color: var(--light-grey) !important;
+  color: white;
+}
+.mantine-Select-option:hover,
+.mantine-Select-option[data-checked="true"] {
+  background-color: var(--dark-grey) !important;
+}
+
+@media (max-width: 600px) {
+  .main-cards {
+    width: 100%;
+  }
+  .main-cards img {
+    width: 200px;
+  }
+  .main-cards {
+    gap: 30px;
+  }
+  .main-flex {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
