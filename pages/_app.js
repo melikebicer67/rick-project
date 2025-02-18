@@ -1,5 +1,6 @@
-import "../public/css/styles.css";
 import "@mantine/core/styles.css";
+import "tailwindcss";
+import "../styles/globals.css";
 
 import Home from "../components/layout";
 import { useEffect, useState } from "react";
