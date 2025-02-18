@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.mantine-Select-root input {
+  background-color: #3c3e44 !important;
+  color: #f9f9f9;
+}
+.mantine-Select-dropdown {
+  background-color: #3c3e44 !important;
+  color: white;
+}
+.mantine-Select-option:hover,
+.mantine-Select-option[data-checked="true"] {
+  background-color: #272b33 !important;
+}

@@ -3,17 +3,27 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint --dir server --dir components --dir pages --dir migrations --dir models --dir config --dir helpers --file server.js",
+    "format": "prettier --write 'components/**/*.js' 'pages/*.js' 'server/**/*.js' 'config/*.js' 'migrations/*.js' 'models/*.js' 'public/css/*.css'"
   },
   "dependencies": {
     "@mantine/core": "^7.16.3",
     "@mantine/hooks": "^7.16.3",
+    "@tailwindcss/postcss": "^4.0.6",
     "next": "latest",
+    "postcss": "^8.5.2",
     "prop-types": "^15.8.1",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "tailwindcss": "^4.0.6",
+    "zustand": "^5.0.3"
   },
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "eslint": "^9.20.1",
+    "postcss-preset-mantine": "^1.17.0"
   }
 }
